@@ -39,8 +39,10 @@ const data = {
             "oversized-polygon": [],   
         } 
     },
-    "whatever": ['assets/whatever-image-1.jpg']
+    "whatever": 
+        ['assets/whatever-images/whatever-image-1.jpg', 'assets/whatever-images/whatever-image-2.jpg', 'assets/whatever-images/whatever-image-3.jpg', 'assets/whatever-images/whatever-image-4.jpg', 'assets/whatever-images/whatever-image-5.jpg','assets/whatever-images/whatever-image-6.jpg']
     
+        
 
 };
 
@@ -105,10 +107,11 @@ $(function(){
 
     
     const showResults = function (userCare,glasses){
-        if (userCare === "yes-care") {
-            console.log('you get glasses');
+        if (userCare === 'yes-care') {
+            $('.yourGlasses').html(`<img src="${glasses}" alt="picture of glasses"><img>`);
+
         } else {
-            console.log("you get this pickachu instead");
+            $('.yourGlasses').html(`<img src="assets/no-care-image.png" alt="picture of pickachu"></img>`)
         }
 
     }
