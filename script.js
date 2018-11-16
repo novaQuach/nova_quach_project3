@@ -116,7 +116,7 @@ const data = {
     "whatever":
         [
             'assets/whatever-images/whatever-image-1.jpg', 'assets/whatever-images/whatever-image-2.jpg', 'assets/whatever-images/whatever-image-3.jpg', 'assets/whatever-images/whatever-image-4.jpg', 'assets/whatever-images/whatever-image-5.jpg', 'assets/whatever-images/whatever-image-6.jpg'
-    ]
+        ]
 
 
 
@@ -133,26 +133,43 @@ $(function () {
     // userGlasses function will take a tailored array ( array that combines all the glasses option that'll potentailly fit the user) it will return a random pair of glasses 
     //go back to submit button event --> link the url of the selected option to the displayed img to show user their glasses suggestion 
 
-
-    const userPreferences = []
-
-
-    $('form').on('submit', function (event) {
+    const getUserPreferences = function() {
         const userShape = $("input[name='shape']:checked").val();
         const userVibe = $("input[name='vibe']:checked").val();
         const userPersonality = $("input[name='personality']:checked").val();
         const userCare = $("input[name='care']:checked").val();
-        event.preventDefault();
-        userPreferences.push(userShape, userVibe, userPersonality, userCare);
+        const userPreferences = [userShape, userVibe, userPersonality, userCare];
+
+        return userPreferences;
+    }
+
+    $('#submit').on('click', function (event) {
+        const userShape = $("input[name='shape']:checked").val();
+        const userVibe = $("input[name='vibe']:checked").val();
+        const userPersonality = $("input[name='personality']:checked").val();
+        const userCare = $("input[name='care']:checked").val();
+        const userPreferences = [ userShape, userVibe, userPersonality, userCare ];
+
         console.log(userPreferences);
+        
+        event.preventDefault();
         let glassesChoices = getGlassesChoices(userShape, userVibe, userPersonality); //getGlasses returns an array
 
         let glasses = getGlasses(glassesChoices);
         showResults(userCare, glasses);
 
+        $('.question').hide();
+        $('#next').hide();
+        $('#submit').hide();
+
+        $('#changeMyMind').on('click', function () {
+            showResults('yes-care', glasses);
+            $(this).hide();
+        });
+
     }); //end of onSubmit function 
 
-    function getGlassesChoices(userShape, userVibe, userPersonality) {
+    const getGlassesChoices = function getGlassesChoices(userShape, userVibe, userPersonality) {
         if (userPersonality === 'whatever') {
             return data.whatever;
         }
@@ -188,8 +205,35 @@ $(function () {
 
         } else {
             $('.yourGlasses').html(`<img src="assets/no-care-image.png" alt="picture of pickachu"></img>`)
+            $('#changeMyMind').show();
         }
 
     }
+
+
+
+    const questionsArray =$('.question').get(); 
+    // this will select the question divs in an array 
+     
+    let nextCounter = 0; //reps the question we are on 
+
+    $('#next').on('click',function(event){
+        const userPreferences = getUserPreferences();
+
+        if (userPreferences[nextCounter] == null) {
+            alert('Please select an option');
+            return;
+        }
+
+        nextCounter++;
+        $(questionsArray[nextCounter-1]).hide();
+        $(questionsArray[nextCounter]).show();
+
+        if (nextCounter >= questionsArray.length - 1) {
+            $('#next').hide();
+            $('#submit').show();
+        }
+    })
+    
 
 });//document ready ends

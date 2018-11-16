@@ -2,3 +2,18 @@
 @import "partials/mixins";
 
 
+.question {
+    display:none;
+}
+
+.question:first-child {
+    display: inherit;
+}
+
+#submit {
+    display:none;
+}
+
+#changeMyMind {
+    display:none;
+}

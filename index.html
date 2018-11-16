@@ -10,7 +10,7 @@
 <body>
     <h1>Quiz Me NOW</h1>
     <form action="">
-        <div>
+        <div class="question">
             <p>What is your face shape?</p>
             <input type="radio" name="shape" value="round" id="round" required>
             <label for="round">Round</label>
@@ -22,7 +22,7 @@
             <label for="oval">Oval</label>
         </div>
        
-        <div>
+        <div class="question">
             <p>Choose your Vibe</p>
             <input type="radio" name="vibe" value="solids" id="solids" required>
             <label for="solids">Solids</label>
@@ -38,7 +38,7 @@
             <label for="transparent">Transparent</label>
         </div>
 
-        <div>
+        <div class="question">
             <p>Describe yourself</p>
             <input type="radio" name="personality" value="adventurous" id="adventurous" required>
             <label for="adventurous">Adventurous</label>
@@ -51,7 +51,7 @@
             <label for="whatever">I do what I want</label>
         </div>
  
-        <div>
+        <div class="question">
             <p>Do you even care for glasses?</p>
             <input type="radio" name="care" value="yes-care" id="yes-care" required="required">
             <label for="yes-care">Hells yeah!</label>
@@ -60,15 +60,24 @@
             <label for="do-not-care">Nope, not at all</label>
             
         </div>
+
+        <input type="button" value="next" id="next">
+        <label for="next"></label>
+
         <input type="submit" value="Glasses me NOW!" id="submit">
         <label for="submit"></label>
+
+        <input type="button" value="Actually, I do care about glasses" id ="changeMyMind">
+        <label for="changeMyMind"></label>
 
     </form>
 
     <div class="yourGlasses"></div>
 
+    <!-- Switch to CDN -->
+    <script src="jquery-2.1.4.min.js"></script>
 
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script> -->
     <!-- <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script> -->
     <script src="script.js"></script>
 </body>
