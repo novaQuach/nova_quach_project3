@@ -165,6 +165,18 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box;
 }
 
+body {
+  font-size: 62.5%;
+  background: url(../assets/main-background-image.jpg);
+}
+
+.title {
+  font-size: 3.2rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #FAFAFA;
+  text-transform: uppercase;
+}
+
 .question {
   display: none;
 }
@@ -173,11 +185,15 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   display: inherit;
 }
 
-#submit {
+#generate {
   display: none;
 }
 
 #changeMyMind {
+  display: none;
+}
+
+#refresh {
   display: none;
 }
 /*# sourceMappingURL=style.css.map */

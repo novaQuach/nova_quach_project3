@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Quiz Me</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+
+
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <h1>Quiz Me NOW</h1>
+    <h1 class="title">Quiz Me NOW</h1>
     <form action="">
         <div class="question">
             <p>What is your face shape?</p>
@@ -64,20 +68,24 @@
         <input type="button" value="next" id="next">
         <label for="next"></label>
 
-        <input type="submit" value="Glasses me NOW!" id="submit">
-        <label for="submit"></label>
+        <input type="button" value="Glasses me NOW!" id="generate">
+        <label for="generate"></label>
 
         <input type="button" value="Actually, I do care about glasses" id ="changeMyMind">
         <label for="changeMyMind"></label>
 
+        <input type="submit" value="Try again" id ="refresh">
+        <label for="refresh"></label>
+
     </form>
 
     <div class="yourGlasses"></div>
+    <!-- here set a max-width for this div, and the picture will be 100%; -->
 
     <!-- Switch to CDN -->
-    <script src="jquery-2.1.4.min.js"></script>
+    <!-- <script src="jquery-2.1.4.min.js"></script> -->
 
-    <!-- <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <!-- <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script> -->
     <script src="script.js"></script>
 </body>

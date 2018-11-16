@@ -143,7 +143,7 @@ $(function () {
         return userPreferences;
     }
 
-    $('#submit').on('click', function (event) {
+    $('#generate').on('click', function (event) {
         const userShape = $("input[name='shape']:checked").val();
         const userVibe = $("input[name='vibe']:checked").val();
         const userPersonality = $("input[name='personality']:checked").val();
@@ -160,12 +160,14 @@ $(function () {
 
         $('.question').hide();
         $('#next').hide();
-        $('#submit').hide();
+        $('#generate').hide();
 
         $('#changeMyMind').on('click', function () {
             showResults('yes-care', glasses);
             $(this).hide();
+            $('#refresh').show();
         });
+
 
     }); //end of onSubmit function 
 
@@ -200,7 +202,18 @@ $(function () {
 
 
     const showResults = function (userCare, glasses) {
-        if (userCare === 'yes-care') {
+        if (userCare == null) {
+            alert('Pick one please!')
+            $('this.question').show();
+            userCare == $("input[name=='care']:checked");
+            showResults(userCare, getGlasses(glassesChoices));
+
+            // showResults(userCare,glasses);
+
+        }
+
+
+        else if (userCare === 'yes-care') {
             $('.yourGlasses').html(`<img src="${glasses}" alt="picture of glasses"><img>`);
 
         } else {
@@ -221,7 +234,7 @@ $(function () {
         const userPreferences = getUserPreferences();
 
         if (userPreferences[nextCounter] == null) {
-            alert('Please select an option');
+            alert('Pick one please!');
             return;
         }
 
@@ -231,7 +244,7 @@ $(function () {
 
         if (nextCounter >= questionsArray.length - 1) {
             $('#next').hide();
-            $('#submit').show();
+            $('#generate').show();
         }
     })
     

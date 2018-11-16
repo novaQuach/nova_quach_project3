@@ -2,6 +2,23 @@
 @import "partials/mixins";
 
 
+
+// font-family: 'Source Sans Pro', sans-serif;
+
+
+body {
+    font-size: 62.5%;
+    background: url(../assets/main-background-image.jpg);
+    
+}
+
+.title {
+    font-size:3.2rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #FAFAFA;
+    text-transform:uppercase;
+}
+
 .question {
     display:none;
 }
@@ -10,10 +27,14 @@
     display: inherit;
 }
 
-#submit {
+#generate {
     display:none;
 }
 
 #changeMyMind {
+    display:none;
+}
+
+#refresh{
     display:none;
 }
