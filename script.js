@@ -23,8 +23,6 @@ const data = {
                     'assets/circular-metal-regular-images/circular-metal-regular-image-1.jpg',
                     'assets/circular-metal-regular-images/circular-metal-regular-image-2.jpg',
                     'assets/circular-metal-regular-images/circular-metal-regular-image-3.jpg',
-                    'assets/circular-metal-regular-images/circular-metal-regular-image-4.jpg',
-                    'assets/circular-metal-regular-images/circular-metal-regular-image-5.jpg'
                 ],
 
             "oversized":
@@ -32,7 +30,6 @@ const data = {
                     'assets/circular-metal-oversized-images/circular-metal-oversized-image-1.jpg',
                     'assets/circular-metal-oversized-images/circular-metal-oversized-image-2.jpg',
                     'assets/circular-metal-oversized-images/circular-metal-oversized-image-3.jpg',
-                    'assets/circular-metal-oversized-images/circular-metal-oversized-image-4.jpg'
                 ],
         },
 
@@ -40,7 +37,7 @@ const data = {
             "regular":
                 [
                     'assets/circular-pattern-regular-images/circular-pattern-regular-image-1.jpg',
-                    'assets/circular-pattern-regular-images/circular-pattern-regular-image-3.jpg'
+                    'assets/circular-pattern-regular-images/circular-pattern-regular-image-2.jpg'
                 ],
 
             "oversized":
@@ -48,18 +45,20 @@ const data = {
                     'assets/circular-pattern-oversized-images/circular-pattern-oversized-image-1.jpg',
                     'assets/circular-pattern-oversized-images/circular-pattern-oversized-image-2.jpg',
                     'assets/circular-pattern-oversized-images/circular-pattern-oversized-image-3.jpg',
-                    'assets/circular-pattern-oversized-images/circular-pattern-oversized-image-4.jpg'
                 ],
         },
 
         "transparent": {
-            "regular": [],
+            "regular": 
+                [
+                    'assets/circular-transparent-regular-images/circular-transparent-regular-image-1.jpg',
+                    'assets/circular-transparent-regular-images/circular-transparent-regular-image-2.jpg' 
+                ],
             "oversized":
                 [
                     'assets/circular-transparent-oversized-images/circular-transparent-oversized-image-1.jpg',
                     'assets/circular-transparent-oversized-images/circular-transparent-oversized-image-2.jpg',
                     'assets/circular-transparent-oversized-images/circular-transparent-oversized-image-3.jpg',
-                    'assets/circular-transparent-oversized-images/circular-transparent-oversized-image-4.jpg'
                 ],
         }
     },
@@ -82,16 +81,27 @@ const data = {
         "metals": {
             "regular":
                 [
-                'assets/rectangular/metal-regular-images/rectangular-metal-regular-image-1.jpg'
+                    'assets/rectangular-metal-regular-images/rectangular-metal-regular-image-1.jpg',
+                    'assets/rectangular-metal-regular-images/rectangular-metal-regular-image-2.jpg'
                 ],
-            "oversized": [],
+            "oversized":
+                [
+                    'assets/rectangular-metal-oversized-images/rectangular-metal-oversized-image-1.png',
+                    'assets/rectangular-metal-oversized-images/rectangular-metal-oversized-image-2.png'
+                ],
         },
 
         "patterns": {
-            "regular": [],
-            "oversized":
-                ['assets/rectangular-pattern-oversized-images/rectangular-pattern-oversized-image-1.jpg',
-                    'assets/rectangular-pattern-oversized-images/rectangular-pattern-oversized-image-2.jpg'],
+            "regular":
+                [
+                    'assets/rectangular-pattern-regular-images/rectangular-pattern-regular-image-1.jpg',
+                    'assets/rectangular-pattern-regular-images/rectangular-pattern-regular-image-2.jpg'
+                ],
+            "oversized":    
+                [
+                    'assets/rectangular-pattern-oversized-images/rectangular-pattern-oversized-image-1.jpg',
+                    'assets/rectangular-pattern-oversized-images/rectangular-pattern-oversized-image-2.jpg'
+                ],
         },
 
         "transparent": {

@@ -33,7 +33,7 @@
 
 @mixin label-style ($width){
      @include body-text($primary-color,1.8rem,400);
-    margin: auto 0 auto 50px;
+    margin: 0 0 0 50px;
     line-height:2.3;
     display:block;
     cursor:pointer;

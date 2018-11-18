@@ -132,6 +132,30 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+@media (max-width: 1057px) {
+  .form-wrapper {
+    width: 700px;
+    height: 350px; }
+  .container {
+    width: 560px;
+    height: 280px; }
+  .try-again {
+    padding-right: 100px; }
+  .btns-div.mind-change-div {
+    margin-left: 100px; } }
+
+@media (max-width: 320px) {
+  .form-wrapper {
+    width: 256px;
+    text-align: center; }
+  .container {
+    width: 204.8px;
+    height: 80%;
+    margin: 0 auto; }
+  .yourGlasses {
+    width: 204.8px;
+    height: 200px; } }
+
 body {
   font-size: 62.5%;
   background: lightgray; }
@@ -212,7 +236,7 @@ input[type="radio"] {
   font-size: 1.8rem;
   font-weight: 400;
   color: #3d3837;
-  margin: auto 0 auto 50px;
+  margin: 0 0 0 50px;
   line-height: 2.3;
   display: block;
   cursor: pointer;
@@ -228,7 +252,7 @@ input[type="radio"] {
   font-size: 1.8rem;
   font-weight: 400;
   color: #3d3837;
-  margin: auto 0 auto 50px;
+  margin: 0 0 0 50px;
   line-height: 2.3;
   display: block;
   cursor: pointer;
@@ -244,7 +268,7 @@ input[type="radio"] {
   font-size: 1.8rem;
   font-weight: 400;
   color: #3d3837;
-  margin: auto 0 auto 50px;
+  margin: 0 0 0 50px;
   line-height: 2.3;
   display: block;
   cursor: pointer;
@@ -260,7 +284,7 @@ input[type="radio"] {
   font-size: 1.8rem;
   font-weight: 400;
   color: #3d3837;
-  margin: auto 0 auto 50px;
+  margin: 0 0 0 50px;
   line-height: 2.3;
   display: block;
   cursor: pointer;
