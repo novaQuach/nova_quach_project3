@@ -40,7 +40,6 @@ const data = {
             "regular":
                 [
                     'assets/circular-pattern-regular-images/circular-pattern-regular-image-1.jpg',
-                    'assets/circular-pattern-regular-images/circular-pattern-regular-image-2.jpg',
                     'assets/circular-pattern-regular-images/circular-pattern-regular-image-3.jpg'
                 ],
 

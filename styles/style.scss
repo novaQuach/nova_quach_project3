@@ -17,7 +17,7 @@ body {
 .wrapper{
     max-width:1600px;
     background: url(../assets/main-background-image.jpg);
-    height:1200px;
+    height:100vh;
 }
 
 .form-wrapper {
@@ -27,6 +27,24 @@ body {
 } 
 // their flex children will be the container ( which holds the div question, and the buttons)
 
+#generate {
+    display:none;
+}
+
+#changeMyMind {
+    display:none;
+    margin:0;
+}
+
+.btns-div.mind-change-div {
+    position: absolute;
+    bottom: 100px;
+}
+
+#refresh{
+    display:none;
+}
+
 .container {
     width: 800px;
     height: 80%;
@@ -34,17 +52,31 @@ body {
 
 }
 
+// sample animate
+// .yourElement {
+//   animation-duration: 3s;
+//   animation-delay: 2s;
+//   animation-iteration-count: infinite;
+// }
+
+.animated-swing-now {
+    display: -moz-inline-stack;
+    animation-duration:2s;
+    animation-delay:0.5s;
+}
+
 .yourGlasses {
     display: none;
-    width: 1000px;
-    height: 1000px;
+    width: 800px;
+    height: 500px;
     overflow: hidden;
     text-align: center;
+    margin:0 auto;
 }
 
 .glasses-img{
-    width: 1000px;
-    
+    width:100%;
+    margin: 0 auto;
 }
 
 .btns-div {
@@ -61,37 +93,16 @@ body {
     }
 }
 
-// label styles 
-// .options{
-   
-// }
-
-
-
 
 
 input[type="radio"] {
   display: none;
 }
 
-// .options label {
-//     @include body-text($primary-color,1.8rem,400);
-//     margin: auto 0 auto 50px;
-//     line-height:2.3;
-//     display:block;
-//     cursor:pointer;
-//     border: skyblue solid 2 px;
-//     padding: 3px 0 3px 50px;
-//     width:25%;
-//      &:hover{
-//         font-weight: bolder;
-//     }
-// }
-
 // label styles 
 
 .options-small {
-    @include label-style (25%);
+    @include label-style (22%);
 }
 
 .options-medium {
@@ -111,7 +122,7 @@ input[type="radio"] {
 
 input:checked + label {
     outline:none;
-    box-shadow: 2.5px 2.5px 1px rgb(131, 215, 248);
+    box-shadow: 0px 0px 2px 4px rgb(131, 215, 248);
     font-weight:bolder;
 }
   
@@ -132,7 +143,7 @@ input:checked + label {
     text-transform:uppercase;
     margin-top: 0;
     text-align: center;
-    text-shadow: 6px 6px $secondary-color-light; 
+    text-shadow: 6px 6px 0.5px $secondary-color-light; 
     padding-top:50px;
 }
 
@@ -143,7 +154,7 @@ input:checked + label {
     display:none;
     background: white;
     opacity: 0.8;
-    // box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    box-shadow: 0px 0px 8px 8px #FAFAFA;
     // box-shadow: 1px 1px 1px lightblue;
 }
 
@@ -155,18 +166,5 @@ input:checked + label {
     @include body-text($primary-color,2.4rem,600);
     margin: 0 0 0 50px;
     padding-top: 20px;
-}
-
-
-
-#generate {
-    display:none;
-}
-
-#changeMyMind {
-    display:none;
-}
-
-#refresh{
-    display:none;
+    padding-bottom: 20px;
 }
