@@ -25,5 +25,18 @@
     background: $secondary-color-dark;
     padding:5px 25px 7px 25px;
     text-transform:capitalize;
+}
 
+@mixin label-style ($width){
+     @include body-text($primary-color,1.8rem,400);
+    margin: auto 0 auto 50px;
+    line-height:2.3;
+    display:block;
+    cursor:pointer;
+    border: skyblue solid 2 px;
+    padding: 3px 0 3px 50px;
+    width:$width;
+     &:hover{
+        font-weight: bolder;
+    }
 }

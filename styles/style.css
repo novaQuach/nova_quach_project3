@@ -148,7 +148,7 @@ body {
 
 .container {
   width: 800px;
-  height: 70%;
+  height: 80%;
   margin: 0 auto; }
 
 .yourGlasses {
@@ -162,10 +162,10 @@ body {
   width: 1000px; }
 
 .btns-div {
-  text-align: right; }
+  text-align: left; }
 
 .btns {
-  margin-right: 100px;
+  margin-left: 100px;
   margin-top: 20px;
   font-family: 'Raleway', sans-serif;
   font-size: 1.6rem;
@@ -174,9 +174,81 @@ body {
   padding: 5px 25px 7px 25px;
   text-transform: capitalize;
   border: 0; }
+  .btns:hover {
+    background: #099432; }
 
-.btns:hover {
-  background: #099432; }
+input[type="radio"] {
+  display: none; }
+
+.options-small {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #3d3837;
+  margin: auto 0 auto 50px;
+  line-height: 2.3;
+  display: block;
+  cursor: pointer;
+  border: skyblue solid 2 px;
+  padding: 3px 0 3px 50px;
+  width: 25%; }
+  .options-small:hover {
+    font-weight: bolder; }
+
+.options-medium {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #3d3837;
+  margin: auto 0 auto 50px;
+  line-height: 2.3;
+  display: block;
+  cursor: pointer;
+  border: skyblue solid 2 px;
+  padding: 3px 0 3px 50px;
+  width: 30%; }
+  .options-medium:hover {
+    font-weight: bolder; }
+
+.options-large {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #3d3837;
+  margin: auto 0 auto 50px;
+  line-height: 2.3;
+  display: block;
+  cursor: pointer;
+  border: skyblue solid 2 px;
+  padding: 3px 0 3px 50px;
+  width: 35%; }
+  .options-large:hover {
+    font-weight: bolder; }
+
+.options-xlarge {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #3d3837;
+  margin: auto 0 auto 50px;
+  line-height: 2.3;
+  display: block;
+  cursor: pointer;
+  border: skyblue solid 2 px;
+  padding: 3px 0 3px 50px;
+  width: 44%; }
+  .options-xlarge:hover {
+    font-weight: bolder; }
+
+input:checked + label {
+  outline: none;
+  -webkit-box-shadow: 2.5px 2.5px 1px #83d7f8;
+  box-shadow: 2.5px 2.5px 1px #83d7f8;
+  font-weight: bolder; }
+
+.try-again {
+  text-align: right;
+  margin-bottom: 20px; }
 
 .title {
   font-size: 4.5rem;
@@ -204,14 +276,6 @@ body {
   color: #3d3837;
   margin: 0 0 0 50px;
   padding-top: 20px; }
-
-.option {
-  font-family: "Open Sans Condensed", sans-serif;
-  font-size: 1.8rem;
-  font-weight: 400;
-  color: #3d3837;
-  margin: auto 0 auto 50px;
-  line-height: 2.3; }
 
 #generate {
   display: none; }

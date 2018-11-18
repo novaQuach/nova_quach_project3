@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Quiz Me</title>
+    <title>Glasses me NOW</title>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,600,700|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="animate.min.css">
 
 
 
@@ -18,69 +19,52 @@
         <form class="form-wrapper">
             <div class="question container">
                 <p class="question-title">What is your face shape?</p>
-                <div class="option">
                     <input type="radio" name="shape" value="round" id="round" required>
-                    <label for="round">Round</label>
-                </div>
-                <div class="option">
+                    <label class="options-small" for="round">Round</label>
+                
                     <input type="radio" name="shape" value="square" id="square" required>
-                    <label for="square">Square</label>
-                </div>
-                <div class="option">
+                    <label class="options-small" for="square">Square</label>
+            
                     <input type="radio" name="shape" value="oval" id="oval" required>
-                    <label for="oval">Oval</label>
-                </div>
+                    <label class="options-small" for="oval">Oval</label>
+                
             </div>
         
             <div class="question container ">
                 <p class="question-title">Choose your vibe.</p>
-                <div class="option">
                     <input type="radio" name="vibe" value="solids" id="solids" required>
-                    <label for="solids">Solids</label>
-                </div>
+                    <label class="options-medium"for="solids">Solids</label>
 
-                <div class="option">
                     <input type="radio" name="vibe" value="metals" id="metals" required>
-                    <label for="metals">Metals</label>
-                </div>
+                    <label class="options-medium" for="metals">Metals</label>
 
-                <div class="option"> 
                     <input type="radio" name="vibe" value="patterns" id="patterns" required>
-                    <label for="patterns">Patterns</label>
-                </div>
+                    <label class="options-medium" for="patterns">Patterns</label>
 
-                <div class="option">
                     <input type="radio" name="vibe" value="transparent" id="transparent" required>
-                    <label for="transparent">Transparent</label>
-                </div>
+                    <label class="options-medium" for="transparent">Transparent</label>
             </div>
 
             <div class="question container ">
                 <p class="question-title">Describe yourself.</p>
-                <div class="option">
                     <input type="radio" name="personality" value="adventurous" id="adventurous" required>
-                    <label for="adventurous">Adventurous</label>
-                </div>
-                <div class="option">
+                    <label class= "options-large"for="adventurous">Adventurous</label>
+               
                     <input type="radio" name="personality" value="Netflix-and-chill" id="Netflix-and-chill" required>
-                    <label for="Netflix-and-chill">Netflix and Chill</label>
-                </div>
-                <div class="option">
+                    <label class="options-large" for="Netflix-and-chill">Netflix and Chill</label>
+               
                     <input type="radio" name="personality" value="whatever" id="whatever" required>
-                    <label for="whatever">I do what I want</label>
-                </div>
+                    <label class="options-large"for="whatever">I do what I want</label>
             </div>
     
             <div class="question container">
                 <p class="question-title">Do you even care for glasses?</p>
-                <div class="option">
                     <input type="radio" name="care" value="yes-care" id="yes-care" required="required">
-                    <label for="yes-care">Hells yeah, I can't see!</label>
-                </div>
-                <div class="option">
+                    <label class="options-xlarge" for="yes-care">Hells yeah, I can't see!</label>
+           
                     <input type="radio" name="care" value="do-not-care" id="do-not-care" required="required">
-                    <label for="do-not-care">Nope, not at all.</label>
-                </div>
+                    <label class="options-xlarge" for="do-not-care">Nope, not at all.</label>
+        
                 
             </div>
 
@@ -88,6 +72,7 @@
                 <input class="btns" type="submit" value="Try again" id="refresh">
                 <label for="refresh"></label>
             </div>
+
             <div class="yourGlasses"></div>
 
             <div class="btns-div">

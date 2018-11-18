@@ -29,7 +29,7 @@ body {
 
 .container {
     width: 800px;
-    height: 70%;
+    height: 80%;
     margin: 0 auto;
 
 }
@@ -48,19 +48,81 @@ body {
 }
 
 .btns-div {
-    text-align:right;
+    text-align:left;
 }
 
 .btns {
-    margin-right: 100px;
+    margin-left: 100px;
     margin-top: 20px;
     @include button-style;
     border: 0;
+    &:hover {
+         background:$secondary-color-light;
+    }
 }
 
-.btns:hover {
-    background:$secondary-color-light;
+// label styles 
+// .options{
+   
+// }
+
+
+
+
+
+input[type="radio"] {
+  display: none;
 }
+
+// .options label {
+//     @include body-text($primary-color,1.8rem,400);
+//     margin: auto 0 auto 50px;
+//     line-height:2.3;
+//     display:block;
+//     cursor:pointer;
+//     border: skyblue solid 2 px;
+//     padding: 3px 0 3px 50px;
+//     width:25%;
+//      &:hover{
+//         font-weight: bolder;
+//     }
+// }
+
+// label styles 
+
+.options-small {
+    @include label-style (25%);
+}
+
+.options-medium {
+    @include label-style (30%);
+}
+
+.options-large {
+    @include label-style (35%);
+}
+
+.options-xlarge {
+    @include label-style (44%);
+
+}
+
+
+
+input:checked + label {
+    outline:none;
+    box-shadow: 2.5px 2.5px 1px rgb(131, 215, 248);
+    font-weight:bolder;
+}
+  
+
+
+// end of label styles 
+.try-again{
+    text-align:right;
+    margin-bottom:20px;
+}
+
 
 .title {
     font-size:4.5rem;
@@ -91,16 +153,11 @@ body {
 
 .question-title{
     @include body-text($primary-color,2.4rem,600);
-    // $color,$font-size,$font-weight
     margin: 0 0 0 50px;
     padding-top: 20px;
 }
 
-.option{
-    @include body-text($primary-color,1.8rem,400);
-    margin: auto 0 auto 50px;
-    line-height:2.3;
-}
+
 
 #generate {
     display:none;

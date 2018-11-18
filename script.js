@@ -115,7 +115,7 @@ const data = {
     },
     "whatever":
         [
-            'assets/whatever-images/whatever-image-1.jpg', 'assets/whatever-images/whatever-image-2.jpg', 'assets/whatever-images/whatever-image-3.jpg', 'assets/whatever-images/whatever-image-4.jpg', 'assets/whatever-images/whatever-image-5.jpg', 'assets/whatever-images/whatever-image-6.jpg'
+            'assets/whatever-images/whatever-image-1.jpg', 'assets/whatever-images/whatever-image-2.jpg', 'assets/whatever-images/whatever-image-3.jpg', 'assets/whatever-images/whatever-image-4.jpg', 
         ]
 
 
