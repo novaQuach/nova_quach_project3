@@ -3,28 +3,80 @@
 
 
 
-// font-family: 'Source Sans Pro', sans-serif;
+
+    // font-family: 'Raleway', sans-serif;
+    // font-family: 'Open Sans Condensed', sans-serif;
+
 
 
 body {
     font-size: 62.5%;
+    // background: url(../assets/main-background-image.jpg);
+    background: lightgray;
+}
+
+.wrapper{
+    max-width:1600px;
     background: url(../assets/main-background-image.jpg);
+    height:100vh;
+}
+
+.form-wrapper {
+    
+    margin: 0 auto;
+    width:80%;
+
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    
+} 
+// their flex children will be the container ( which holds the div question, and the buttons)
+
+.container {
+    max-height:100%;
+    flex: 0 1 70%;
+
+}
+
+.yourGlasses {
+     flex: 0 1 70%;
+}
+.btns {
+    flex: 0 1 20%;
+
+}
+.title {
+    font-size:3.2rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight:bold;
+    color: #FAFAFA;
+    text-transform:uppercase;
+    margin-top: 0;
     
 }
 
-.title {
-    font-size:3.2rem;
-    font-family: 'Source Sans Pro', sans-serif;
-    color: #FAFAFA;
-    text-transform:uppercase;
+.glasses-img{
+    width: 800px;
+    
 }
+
 
 .question {
     display:none;
+    background: #FAFAFA;
+    border: 2px black solid;
 }
 
 .question:first-child {
-    display: inherit;
+    display: initial;
+}
+
+.question-title{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size:1.8rem;
+    color:#3d3837;
+
 }
 
 #generate {

@@ -159,8 +159,11 @@ $(function () {
         showResults(userCare, glasses);
 
         $('.question').hide();
+        $('.yourGlasses').show();
         $('#next').hide();
         $('#generate').hide();
+        $('#refresh').show();
+        
 
         $('#changeMyMind').on('click', function () {
             showResults('yes-care', glasses);
@@ -214,7 +217,9 @@ $(function () {
 
 
         else if (userCare === 'yes-care') {
-            $('.yourGlasses').html(`<img src="${glasses}" alt="picture of glasses"><img>`);
+            $('.yourGlasses').html(`<img class="glasses-img" src="${glasses}" alt="picture of glasses"><img>`);
+
+          
 
         } else {
             $('.yourGlasses').html(`<img src="assets/no-care-image.png" alt="picture of pickachu"></img>`)
@@ -223,7 +228,7 @@ $(function () {
 
     }
 
-
+   
 
     const questionsArray =$('.question').get(); 
     // this will select the question divs in an array 
@@ -246,7 +251,17 @@ $(function () {
             $('#next').hide();
             $('#generate').show();
         }
-    })
+    });
+    
+    // const testing = () => {
+    //     $('.question:first-child').hide();
+    //     $('.yourGlasses').html(`<img class="glasses-img" src="assets/circular-metal-oversized-images/circular-metal-oversized-image-2.jpg" alt="picture of pickachu"></img>`)
+    //     $('.yourGlasses').show();
+    //     $('.btns').hide();
+    //     $('#refresh').show();
+    // };
+
+    // testing();
     
 
 });//document ready ends

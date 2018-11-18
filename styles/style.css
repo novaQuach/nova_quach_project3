@@ -167,22 +167,76 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 body {
   font-size: 62.5%;
+  background: lightgray;
+}
+
+.wrapper {
+  max-width: 1600px;
   background: url(../assets/main-background-image.jpg);
+  height: 100vh;
+}
+
+.form-wrapper {
+  margin: 0 auto;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container {
+  max-height: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 70%;
+          flex: 0 1 70%;
+}
+
+.yourGlasses {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 70%;
+          flex: 0 1 70%;
+}
+
+.btns {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 20%;
+          flex: 0 1 20%;
 }
 
 .title {
   font-size: 3.2rem;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
   color: #FAFAFA;
   text-transform: uppercase;
+  margin-top: 0;
+}
+
+.glasses-img {
+  width: 800px;
 }
 
 .question {
   display: none;
+  background: #FAFAFA;
+  border: 2px black solid;
 }
 
 .question:first-child {
-  display: inherit;
+  display: initial;
+}
+
+.question-title {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.8rem;
+  color: #3d3837;
 }
 
 #generate {
