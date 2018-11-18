@@ -140,36 +140,28 @@ $(function () {
         const userCare = $("input[name='care']:checked").val();
         const userPreferences = [userShape, userVibe, userPersonality, userCare];
 
+        console.log(userPreferences);
+
         return userPreferences;
     }
 
     $('#generate').on('click', function (event) {
-        const userShape = $("input[name='shape']:checked").val();
-        const userVibe = $("input[name='vibe']:checked").val();
-        const userPersonality = $("input[name='personality']:checked").val();
-        const userCare = $("input[name='care']:checked").val();
-        const userPreferences = [ userShape, userVibe, userPersonality, userCare ];
+        const userPreferences = getUserPreferences();
+        const [userShape, userVibe, userPersonality, userCare] = userPreferences;
 
-        console.log(userPreferences);
-        
         event.preventDefault();
+
+        if (userCare == null) {
+            alert('Pick one please!');
+            return;
+        }
+
         let glassesChoices = getGlassesChoices(userShape, userVibe, userPersonality); //getGlasses returns an array
 
         let glasses = getGlasses(glassesChoices);
         showResults(userCare, glasses);
 
-        $('.question').hide();
-        $('.yourGlasses').show();
-        $('#next').hide();
-        $('#generate').hide();
-        $('#refresh').show();
-        
 
-        $('#changeMyMind').on('click', function () {
-            showResults('yes-care', glasses);
-            $(this).hide();
-            $('#refresh').show();
-        });
 
 
     }); //end of onSubmit function 
@@ -205,30 +197,26 @@ $(function () {
 
 
     const showResults = function (userCare, glasses) {
-        if (userCare == null) {
-            alert('Pick one please!')
-            $('this.question').show();
-            userCare == $("input[name=='care']:checked");
-            showResults(userCare, getGlasses(glassesChoices));
-
-            // showResults(userCare,glasses);
-
-        }
-
-
-        else if (userCare === 'yes-care') {
+        if (userCare === 'yes-care') {
+            $('.yourGlasses').show();
             $('.yourGlasses').html(`<img class="glasses-img" src="${glasses}" alt="picture of glasses"><img>`);
-
-          
-
         } else {
             $('.yourGlasses').html(`<img src="assets/no-care-image.png" alt="picture of pickachu"></img>`)
             $('#changeMyMind').show();
         }
 
-    }
+        $('.question').hide();
+        $('.yourGlasses').show();
+        $('#next').hide();
+        $('#generate').hide();
+        $('#refresh').show();
 
-   
+        $('#changeMyMind').on('click', function () {
+            showResults('yes-care', glasses);
+            $(this).hide();
+            $('#refresh').show();
+        });
+    }
 
     const questionsArray =$('.question').get(); 
     // this will select the question divs in an array 
@@ -252,16 +240,6 @@ $(function () {
             $('#generate').show();
         }
     });
-    
-    // const testing = () => {
-    //     $('.question:first-child').hide();
-    //     $('.yourGlasses').html(`<img class="glasses-img" src="assets/circular-metal-oversized-images/circular-metal-oversized-image-2.jpg" alt="picture of pickachu"></img>`)
-    //     $('.yourGlasses').show();
-    //     $('.btns').hide();
-    //     $('#refresh').show();
-    // };
-
-    // testing();
     
 
 });//document ready ends
