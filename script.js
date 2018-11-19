@@ -201,20 +201,20 @@ $(function () {
 
     const showResults = function (userCare, glasses) {
         if (userCare === 'yes-care') {
-            $('.yourGlasses').show();
-            $('.yourGlasses').html(`<img class="glasses-img" src="${glasses}" alt="picture of glasses"><img>`);
+            $('.your-glasses').show();
+            $('.your-glasses').html(`<img class="glasses-img" src="${glasses}" alt="picture of glasses"><img>`);
         } else {
-            $('.yourGlasses').html(`<img src="assets/no-care-image.png" alt="picture of pickachu"></img>`)
-            $('#changeMyMind').show();
+            $('.your-glasses').html(`<img src="assets/no-care-image.png" alt="picture of pickachu"></img>`)
+            $('#change-my-mind').show();
         }
 
         $('.question').hide();
-        $('.yourGlasses').show();
+        $('.your-glasses').show();
         $('#next').hide();
         $('#generate').hide();
         $('#refresh').show();
 
-        $('#changeMyMind').on('click', function () {
+        $('#change-my-mind').on('click', function () {
             showResults('yes-care', glasses);
             $(this).hide();
             $('#refresh').show();

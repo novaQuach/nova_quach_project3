@@ -9,7 +9,7 @@
 
     }
 
-    .yourGlasses {
+    .your-glasses {
         width: 600px;
         height:400px;
         
@@ -49,44 +49,61 @@
 
 
 @media (max-width:715px) {
+    .wrapper {
+        height: 100%;
+    }
+
+    .title {
+        font-size: 3.8rem;
+        padding-top: 30px;
+    }
+
     .form-wrapper {
         width: 400px;
-        height: 400px;
-
+        height: 80%;
+        padding-bottom: 30px;
     }
+
     .container {
         width:400px;
         height:400px;
-
     }
 
-    .yourGlasses {
+    .question-title {
+        font-size: 2rem;
+    }
+
+    .your-glasses {
         width: 400px;
         height:400px;
     }
 
-    // .glasses-img{
-    //     width:80%;
-
-    // }
     .try-again {
         text-align:center;
         margin: 0 auto 20px auto;
     }
 
+    .btns {
+        margin-left:0;
+    }
 
-    // .btns {
-    //     margin: 0 50px;   
-    // }
-    //centers the try again and gimme glasses button
+    .btns-div {
+        width:100%;
+    }
     
     .next-div .btns, .generate-div .btns {
         margin:20px 0 0 0 ;
     }
 
-    .title {
-        font-size: 3.8rem;
+    .btns-div.mind-change-div {
+        margin-left:0;
+        position:static;
     }
+
+    #change-my-mind {
+        width: 100%;
+    }
+
 }
 
 
@@ -106,7 +123,7 @@
         margin: 0 auto;
     }
 
-    .yourGlasses {
+    .your-glasses {
         width:204.8px;
         height: 200px;
     }

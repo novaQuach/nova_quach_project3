@@ -149,7 +149,7 @@ body {
 #generate {
   display: none; }
 
-#changeMyMind {
+#change-my-mind {
   display: none;
   margin: 0; }
 
@@ -165,7 +165,7 @@ body {
   height: 80%;
   margin: 0 auto; }
 
-.yourGlasses {
+.your-glasses {
   display: none;
   width: 800px;
   height: 500px;
@@ -311,7 +311,7 @@ input:checked + label {
   .container {
     width: 600px;
     height: 400px; }
-  .yourGlasses {
+  .your-glasses {
     width: 600px;
     height: 400px; }
   .try-again {
@@ -330,22 +330,37 @@ input:checked + label {
     margin-left: 150px; } }
 
 @media (max-width: 715px) {
+  .wrapper {
+    height: 100%; }
+  .title {
+    font-size: 3.8rem;
+    padding-top: 30px; }
   .form-wrapper {
     width: 400px;
-    height: 400px; }
+    height: 80%;
+    padding-bottom: 30px; }
   .container {
     width: 400px;
     height: 400px; }
-  .yourGlasses {
+  .question-title {
+    font-size: 2rem; }
+  .your-glasses {
     width: 400px;
     height: 400px; }
   .try-again {
     text-align: center;
     margin: 0 auto 20px auto; }
+  .btns {
+    margin-left: 0; }
+  .btns-div {
+    width: 100%; }
   .next-div .btns, .generate-div .btns {
     margin: 20px 0 0 0; }
-  .title {
-    font-size: 3.8rem; } }
+  .btns-div.mind-change-div {
+    margin-left: 0;
+    position: static; }
+  #change-my-mind {
+    width: 100%; } }
 
 @media (max-width: 320px) {
   .form-wrapper {
@@ -355,6 +370,6 @@ input:checked + label {
     width: 204.8px;
     height: 80%;
     margin: 0 auto; }
-  .yourGlasses {
+  .your-glasses {
     width: 204.8px;
     height: 200px; } }
