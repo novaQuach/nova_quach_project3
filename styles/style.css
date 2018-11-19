@@ -132,14 +132,18 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+html {
+  height: 100%; }
+
 body {
+  min-height: 100%;
+  height: 100%;
   font-size: 62.5%;
-  background: lightgray; }
+  background: url(../assets/main-background-image.jpg); }
 
 .wrapper {
   max-width: 1600px;
-  background: url(../assets/main-background-image.jpg);
-  height: 100vh; }
+  height: 100%; }
 
 .form-wrapper {
   margin: 0 auto;
