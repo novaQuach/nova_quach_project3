@@ -14,6 +14,18 @@ body {
     height: 100%;
 }
 
+.title {
+    font-size:4.5rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: $secondary-color-dark;
+    text-transform:uppercase;
+    margin-top: 0;
+    text-align: center;
+    text-shadow: 6px 6px 0.5px $secondary-color-light; 
+    padding-top:50px;
+}
+
 .form-wrapper {
     margin: 0 auto;
     width: 1000px;
@@ -40,8 +52,9 @@ body {
 
 .container {
     width: 800px;
-    height: 80%;
+    // height: 80%;
     margin: 0 auto;
+    padding-bottom: 30px;
 
 }
 
@@ -109,17 +122,7 @@ input:checked + label {
     margin-bottom:20px;
 }
 
-.title {
-    font-size:4.5rem;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    color: $secondary-color-dark;
-    text-transform:uppercase;
-    margin-top: 0;
-    text-align: center;
-    text-shadow: 6px 6px 0.5px $secondary-color-light; 
-    padding-top:50px;
-}
+
 
 .question {
     display:none;

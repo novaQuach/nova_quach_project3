@@ -204,7 +204,7 @@ $(function () {
             $('.your-glasses').show();
             $('.your-glasses').html(`<img class="glasses-img" src="${glasses}" alt="picture of glasses"><img>`);
         } else {
-            $('.your-glasses').html(`<img src="assets/no-care-image.png" alt="picture of pickachu"></img>`)
+            $('.your-glasses').html(`<img class="pika" src="assets/no-care-image.png" alt="picture of pickachu"></img>`)
             $('#change-my-mind').show();
         }
 

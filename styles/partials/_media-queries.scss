@@ -111,21 +111,77 @@
 
 
 
-@media(max-width:320px) {
+@media(max-width:420px) {
+
+    .title {
+        font-size: 2.8rem;
+        padding-top: 30px;
+
+        text-shadow: 3px 3px 0.5px $secondary-color-light; 
+    }
+
     .form-wrapper {
-        width: 256px;
-        text-align:center;
-        } 
+        width: 100%;
+        padding-bottom: 30px;
+    }
 
     .container {
-        width: 204.8px;
-        height: 80%;
-        margin: 0 auto;
+        width:100%;
+        height: initial;
+        text-align: center;
+    }
+
+    .question-title {
+        font-size: 1.6rem;
+        margin: 0;
+    }
+
+    .options-small, .options-medium, .options-large, .options-xlarge {
+        font-size: 1.4rem;
+        margin: 0;
+        padding: 0;
+        display: inline-block;
     }
 
     .your-glasses {
-        width:204.8px;
-        height: 200px;
+        width: 100%;
+        height: initial;
+    }
+
+    .try-again {
+        text-align:center;
+        margin: 0 auto 20px auto;
+    }
+
+    .btns {
+        margin-left:0;
+    }
+
+    .btns-div {
+        width:100%;
+        text-align: center;
+    }
+    
+    .next-div .btns, .generate-div .btns {
+        margin:20px 0 0 0 ;
+    }
+
+    .btns-div.mind-change-div {
+        margin-left:0;
+        position:static;
+    }
+
+    #change-my-mind {
+        width: 90%;
+        // padding: 5px 15px;
+        }
+    input[value="Can't see! Gimme glasses!"]{
+        font-size:1.2rem;
+    }
+
+    .pika {
+        width:60%;
+        margin-bottom:25px;
     }
 
 }
