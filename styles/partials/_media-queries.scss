@@ -1,52 +1,96 @@
 @media (max-width:1057px) {
     .form-wrapper {
         width: 700px;
-        height: 350px;
+        height: 400px;
     }
     .container {
-        width: 560px;
-        height:280px;
+        width: 600px;
+        height:400px;
 
     }
 
-        .try-again{
-        padding-right:100px;
+    .yourGlasses {
+        width: 600px;
+        height:400px;
+        
+}
+    .try-again {
+     margin-left:180px;
     }
+
+    .btns {
+        margin-left:50px;
+    }
+    .btns-div {
+        width:500px;
+    }
+
 
     .btns-div.mind-change-div {
-    margin-left:100px;
+    margin-left:50px;
     }
+
+    .options-small, .options-medium,.options-large,.options-xlarge {
+        width:80%;
+    }
+
 
 }
 
 
-//     .yourGlasses {
-//         display: none;
-//         width: 700px;
-//         height: 350px;
-        
-//     }
 
-//     .glasses-img{
-//         width:75%;
-//     }
+@media (max-width:830px) {
+    .try-again {
+        margin-left:150px;
+    }
+    
+}
 
 
 
+@media (max-width:715px) {
+    .form-wrapper {
+        width: 400px;
+        height: 400px;
+
+    }
+    .container {
+        width:400px;
+        height:400px;
+
+    }
+
+    .yourGlasses {
+        width: 400px;
+        height:400px;
+    }
+
+    // .glasses-img{
+    //     width:80%;
+
+    // }
+    .try-again {
+        text-align:center;
+        margin: 0 auto 20px auto;
+    }
+
+
+    // .btns {
+    //     margin: 0 50px;   
+    // }
+    //centers the try again and gimme glasses button
+    
+    .next-div .btns, .generate-div .btns {
+        margin:20px 0 0 0 ;
+    }
+
+    .title {
+        font-size: 3.8rem;
+    }
+}
 
 
 
-// @media(max-width:700px) {
-//     .form-wrapper{
-//         width:490px;
-//         height: 245px;
-//     }
-//     .container {
-//         width: 392px;
-//     }
-       
-
-// }
 
 
 
