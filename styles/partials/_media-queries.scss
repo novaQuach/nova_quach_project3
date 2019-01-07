@@ -1,54 +1,47 @@
-@media (max-width:1057px) {
+@media (max-width: 1057px) {
     .form-wrapper {
         width: 700px;
         height: 400px;
     }
     .container {
         width: 600px;
-        height:400px;
-
+        height: 400px;
     }
 
     .your-glasses {
         width: 600px;
-        height:400px;
-        
-}
+        height: 400px;
+    }
     .try-again {
-     margin-left:180px;
+        margin-left: 180px;
     }
 
     .btns {
-        margin-left:50px;
+        margin-left: 50px;
     }
     .btns-div {
-        width:500px;
+        width: 500px;
     }
-
 
     .btns-div.mind-change-div {
-    margin-left:50px;
+        margin-left: 50px;
     }
 
-    .options-small, .options-medium,.options-large,.options-xlarge {
-        width:80%;
+    .options-small,
+    .options-medium,
+    .options-large,
+    .options-xlarge {
+        width: 80%;
     }
-
-
 }
 
-
-
-@media (max-width:830px) {
+@media (max-width: 830px) {
     .try-again {
-        margin-left:150px;
+        margin-left: 150px;
     }
-    
 }
 
-
-
-@media (max-width:715px) {
+@media (max-width: 715px) {
     .wrapper {
         height: 100%;
     }
@@ -65,8 +58,8 @@
     }
 
     .container {
-        width:400px;
-        height:400px;
+        width: 400px;
+        height: 400px;
     }
 
     .question-title {
@@ -75,49 +68,41 @@
 
     .your-glasses {
         width: 400px;
-        height:400px;
+        height: 400px;
     }
 
     .try-again {
-        text-align:center;
+        text-align: center;
         margin: 0 auto 20px auto;
     }
 
     .btns {
-        margin-left:0;
+        margin-left: 0;
     }
 
     .btns-div {
-        width:100%;
+        width: 100%;
     }
-    
-    .next-div .btns, .generate-div .btns {
-        margin:20px 0 0 0 ;
+
+    .next-div .btns,
+    .generate-div .btns {
+        margin: 20px 0 0 0;
     }
 
     .btns-div.mind-change-div {
-        margin-left:0;
-        position:static;
+        margin-left: 0;
+        position: static;
     }
 
     #change-my-mind {
         width: 100%;
     }
-
 }
 
-
-
-
-
-
-@media(max-width:420px) {
-
+@media (max-width: 420px) {
     .title {
         font-size: 2.8rem;
         padding-top: 30px;
-
-        text-shadow: 3px 3px 0.5px $secondary-color-light; 
     }
 
     .form-wrapper {
@@ -126,7 +111,7 @@
     }
 
     .container {
-        width:100%;
+        width: 100%;
         height: initial;
         text-align: center;
     }
@@ -136,7 +121,10 @@
         margin: 0;
     }
 
-    .options-small, .options-medium, .options-large, .options-xlarge {
+    .options-small,
+    .options-medium,
+    .options-large,
+    .options-xlarge {
         font-size: 1.4rem;
         margin: 0;
         padding: 0;
@@ -149,39 +137,39 @@
     }
 
     .try-again {
-        text-align:center;
+        text-align: center;
         margin: 0 auto 20px auto;
     }
 
     .btns {
-        margin-left:0;
+        margin-left: 0;
     }
 
     .btns-div {
-        width:100%;
+        width: 100%;
         text-align: center;
     }
-    
-    .next-div .btns, .generate-div .btns {
-        margin:20px 0 0 0 ;
+
+    .next-div .btns,
+    .generate-div .btns {
+        margin: 20px 0 0 0;
     }
 
     .btns-div.mind-change-div {
-        margin-left:0;
-        position:static;
+        margin-left: 0;
+        position: static;
     }
 
     #change-my-mind {
         width: 90%;
         // padding: 5px 15px;
-        }
-    input[value="Can't see! Gimme glasses!"]{
-        font-size:1.2rem;
+    }
+    input[value="Can't see! Gimme glasses!"] {
+        font-size: 1.2rem;
     }
 
     .pika {
-        width:60%;
-        margin-bottom:25px;
+        width: 60%;
+        margin-bottom: 25px;
     }
-
 }
