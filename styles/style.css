@@ -167,14 +167,22 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 html {
   height: 100%;
+  font-size: 62.5%;
 }
 
 body {
   min-height: 100%;
   height: 100%;
-  font-size: 62.5%;
   background: url(../assets/glasses-background-2.jpg);
   background-size: cover;
+  background-attachment: fixed;
+  font-family: "Concert One", cursive;
+  font-size: 2.4rem;
+  color: #444;
+}
+
+body p {
+  margin: 0;
 }
 
 .wrapper {
@@ -184,15 +192,14 @@ body {
 }
 
 .title {
-  font-size: 4.5rem;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
+  font-size: 7.5rem;
+  font-family: "Concert One", cursive;
   color: #eba89f;
   text-transform: uppercase;
   margin-top: 0;
   text-align: center;
   padding-top: 50px;
-  text-shadow: #2e2b32 1px 1px, #2e2b32 0px 0px, #2e2b32 1px 1px, #2e2b32 2px 2px, #2e2b32 3px 3px, #2e2b32 4px 4px, #2e2b32 5px 5px, #2e2b32 6px 6px, #2e2b32 7px 7px, #2e2b32 8px 8px, #2e2b32 9px 9px, #2e2b32 10px 10px, #2e2b32 11px 11px, #2e2b32 12px 12px, #2e2b32 13px 13px, #2e2b32 14px 14px, #2e2b32 15px 15px, #2e2b32 16px 16px, #2e2b32 17px 17px, #2e2b32 18px 18px, #2e2b32 19px 19px, #2e2b32 20px 20px;
+  text-shadow: #2e2b32 1px 1px, #2e2b32 0px 0px, #2e2b32 1px 1px, #2e2b32 2px 2px, #2e2b32 3px 3px, #2e2b32 4px 4px, #2e2b32 5px 5px, #2e2b32 6px 6px, #2e2b32 7px 7px, #2e2b32 8px 8px, #2e2b32 9px 9px, #2e2b32 10px 10px, #2e2b32 11px 11px, #2e2b32 12px 12px, #2e2b32 13px 13px, #2e2b32 14px 14px, #2e2b32 15px 15px;
 }
 
 .form-wrapper {
@@ -201,34 +208,80 @@ body {
   height: 500px;
 }
 
-#generate {
+.container,
+.btns-div {
+  margin: 0 auto;
+  text-align: center;
+}
+
+input[type='radio'] {
   display: none;
 }
 
-#change-my-mind {
+.question {
+  display: none;
+}
+
+.question:first-child {
+  display: block;
+}
+
+.first-option {
+  margin-top: 60px;
+}
+
+label,
+.question-title {
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 5px;
+  background: #fafafa;
+  display: block;
+}
+
+label {
+  -webkit-box-shadow: 0px 0px 8px 1px #5e5e5e, 0px 6px 0px 0px #c4c4c4;
+          box-shadow: 0px 0px 8px 1px #5e5e5e, 0px 6px 0px 0px #c4c4c4;
+}
+
+label:hover {
+  color: #e58d81;
+  cursor: pointer;
+}
+
+.question-title {
+  padding: 90px;
+  -webkit-box-shadow: 0px 0px 8px 1px #515151;
+          box-shadow: 0px 0px 8px 1px #515151;
+}
+
+#change-my-mind,
+#refresh {
   display: none;
   margin: 0;
 }
 
-.btns-div.mind-change-div {
-  position: absolute;
-  bottom: 100px;
+.btns {
+  margin: 20px 0;
+  padding: 15px 20px;
+  border-radius: 5px;
+  background: #fafafa;
+  color: #444;
+  -webkit-box-shadow: 0px 0px 8px 1px #515151;
+          box-shadow: 0px 0px 8px 1px #515151;
 }
 
-#refresh {
-  display: none;
-}
-
-.container {
-  width: 800px;
-  margin: 0 auto;
-  padding-bottom: 30px;
+.refresh-label,
+.change-mind-label {
+  background: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .your-glasses {
   display: none;
   width: 800px;
-  height: 500px;
+  height: 450px;
   overflow: hidden;
   text-align: center;
   margin: 0 auto;
@@ -239,180 +292,28 @@ body {
   margin: 0 auto;
 }
 
-.btns-div {
-  text-align: left;
+.next {
+  border: 2px purple solid;
+  text-align: center;
 }
 
-.btns {
-  margin-left: 100px;
-  margin-top: 20px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.6rem;
-  font-weight: bold;
-  background: #eba89f;
-  padding: 5px 25px 7px 25px;
-  text-transform: capitalize;
-  -webkit-box-shadow: 0 0 0.5px #eba89f, 0 0 0.5px #eba89f;
-          box-shadow: 0 0 0.5px #eba89f, 0 0 0.5px #eba89f;
-  border-radius: 5px;
-  border: none;
-  border: 0;
+footer {
+  text-align: center;
+  padding-top: 180px;
 }
 
-.btns:hover {
-  background: #f4cec9;
-}
-
-input[type='radio'] {
-  display: none;
-}
-
-.options-small {
-  font-family: "Open Sans Condensed", sans-serif;
-  font-size: 1.8rem;
-  font-weight: 400;
-  color: #3d3837;
-  margin: 0 0 0 50px;
-  line-height: 2.3;
-  display: block;
-  cursor: pointer;
-  border: skyblue solid 2 px;
-  padding: 0px 0 0px 50px;
-  width: 22%;
-  border-radius: 2px;
-}
-
-.options-small:hover {
-  font-weight: bolder;
-}
-
-.options-medium {
-  font-family: "Open Sans Condensed", sans-serif;
-  font-size: 1.8rem;
-  font-weight: 400;
-  color: #3d3837;
-  margin: 0 0 0 50px;
-  line-height: 2.3;
-  display: block;
-  cursor: pointer;
-  border: skyblue solid 2 px;
-  padding: 0px 0 0px 50px;
-  width: 30%;
-  border-radius: 2px;
-}
-
-.options-medium:hover {
-  font-weight: bolder;
-}
-
-.options-large {
-  font-family: "Open Sans Condensed", sans-serif;
-  font-size: 1.8rem;
-  font-weight: 400;
-  color: #3d3837;
-  margin: 0 0 0 50px;
-  line-height: 2.3;
-  display: block;
-  cursor: pointer;
-  border: skyblue solid 2 px;
-  padding: 0px 0 0px 50px;
-  width: 35%;
-  border-radius: 2px;
-}
-
-.options-large:hover {
-  font-weight: bolder;
-}
-
-.options-xlarge {
-  font-family: "Open Sans Condensed", sans-serif;
-  font-size: 1.8rem;
-  font-weight: 400;
-  color: #3d3837;
-  margin: 0 0 0 50px;
-  line-height: 2.3;
-  display: block;
-  cursor: pointer;
-  border: skyblue solid 2 px;
-  padding: 0px 0 0px 50px;
-  width: 44%;
-  border-radius: 2px;
-}
-
-.options-xlarge:hover {
-  font-weight: bolder;
-}
-
-input:checked + label {
-  outline: none;
-  -webkit-box-shadow: 0px 0px 2px 4px #f4cec9;
-          box-shadow: 0px 0px 2px 4px #f4cec9;
-  font-weight: bolder;
-}
-
-.try-again {
-  text-align: right;
-  margin-bottom: 20px;
-}
-
-.question {
-  display: none;
-  background: white;
-  opacity: 0.8;
-  -webkit-box-shadow: 0px 0px 8px 8px #fafafa;
-          box-shadow: 0px 0px 8px 8px #fafafa;
-}
-
-.question:first-child {
-  display: block;
-}
-
-.question-title {
-  font-family: "Open Sans Condensed", sans-serif;
-  font-size: 2.4rem;
-  font-weight: 600;
-  color: #3d3837;
-  margin: 0 0 0 50px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+footer a {
+  text-decoration: none;
+  color: #444;
 }
 
 @media (max-width: 1057px) {
   .form-wrapper {
     width: 700px;
-    height: 400px;
-  }
-  .container {
-    width: 600px;
-    height: 400px;
   }
   .your-glasses {
     width: 600px;
     height: 400px;
-  }
-  .try-again {
-    margin-left: 180px;
-  }
-  .btns {
-    margin-left: 50px;
-  }
-  .btns-div {
-    width: 500px;
-  }
-  .btns-div.mind-change-div {
-    margin-left: 50px;
-  }
-  .options-small,
-  .options-medium,
-  .options-large,
-  .options-xlarge {
-    width: 80%;
-  }
-}
-
-@media (max-width: 830px) {
-  .try-again {
-    margin-left: 150px;
   }
 }
 
@@ -421,107 +322,38 @@ input:checked + label {
     height: 100%;
   }
   .title {
-    font-size: 3.8rem;
+    font-size: 4.8rem;
     padding-top: 30px;
   }
   .form-wrapper {
     width: 400px;
-    height: 80%;
     padding-bottom: 30px;
-  }
-  .container {
-    width: 400px;
-    height: 400px;
-  }
-  .question-title {
-    font-size: 2rem;
   }
   .your-glasses {
     width: 400px;
     height: 400px;
-  }
-  .try-again {
-    text-align: center;
-    margin: 0 auto 20px auto;
-  }
-  .btns {
-    margin-left: 0;
-  }
-  .btns-div {
-    width: 100%;
-  }
-  .next-div .btns,
-  .generate-div .btns {
-    margin: 20px 0 0 0;
-  }
-  .btns-div.mind-change-div {
-    margin-left: 0;
-    position: static;
-  }
-  #change-my-mind {
-    width: 100%;
   }
 }
 
 @media (max-width: 420px) {
-  .title {
-    font-size: 2.8rem;
-    padding-top: 30px;
-  }
   .form-wrapper {
-    width: 100%;
+    width: 90%;
     padding-bottom: 30px;
   }
-  .container {
-    width: 100%;
-    height: initial;
-    text-align: center;
-  }
-  .question-title {
-    font-size: 1.6rem;
-    margin: 0;
-  }
-  .options-small,
-  .options-medium,
-  .options-large,
-  .options-xlarge {
-    font-size: 1.4rem;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
+  .title {
+    text-shadow: #2e2b32 1px 1px, #2e2b32 0px 0px, #2e2b32 1px 1px, #2e2b32 2px 2px, #2e2b32 3px 3px, #2e2b32 4px 4px, #2e2b32 5px 5px, #2e2b32 6px 6px, #2e2b32 7px 7px, #2e2b32 8px 8px, #2e2b32 10px 10px;
   }
   .your-glasses {
     width: 100%;
     height: initial;
   }
-  .try-again {
-    text-align: center;
-    margin: 0 auto 20px auto;
-  }
-  .btns {
-    margin-left: 0;
-  }
-  .btns-div {
-    width: 100%;
-    text-align: center;
-  }
   .next-div .btns,
   .generate-div .btns {
     margin: 20px 0 0 0;
   }
-  .btns-div.mind-change-div {
-    margin-left: 0;
-    position: static;
-  }
-  #change-my-mind {
-    width: 90%;
-  }
-  input[value="Can't see! Gimme glasses!"] {
-    font-size: 1.2rem;
-  }
   .pika {
     width: 60%;
-    margin-bottom: 25px;
+    margin-bottom: 60px;
   }
 }
 /*# sourceMappingURL=style.css.map */

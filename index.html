@@ -1,99 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Glasses me NOW</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,600,700|Raleway" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
     <div class="wrapper">
-        <h1 class="title">Glasses me <span class="animated-swing-now">now</span></h1>
+        <h1 class="title">Glasses me now</h1>
         <form class="form-wrapper">
             <div class="question container">
                 <p class="question-title">What is your face shape?</p>
-                    <input type="radio" name="shape" value="round" id="round" required>
-                    <label class="options-small" for="round">Round</label>
-                
-                    <input type="radio" name="shape" value="square" id="square" required>
-                    <label class="options-small" for="square">Square</label>
-            
-                    <input type="radio" name="shape" value="oval" id="oval" required>
-                    <label class="options-small" for="oval">Oval</label>
-                
+
+                <input class="next" type="radio" name="shape" value="round" id="round">
+                <label class="first-option" for="round">Round</label>
+
+                <input class="next" type="radio" name="shape" value="square" id="square">
+                <label for="square">Square</label>
+
+                <input class="next" type="radio" name="shape" value="oval" id="oval">
+                <label for="oval">Oval</label>
+
             </div>
-        
-            <div class="question container ">
+
+            <div class="question container">
                 <p class="question-title">Choose your vibe.</p>
-                    <input type="radio" name="vibe" value="solids" id="solids" required>
-                    <label class="options-medium"for="solids">Solids</label>
 
-                    <input type="radio" name="vibe" value="metals" id="metals" required>
-                    <label class="options-medium" for="metals">Metals</label>
+                <input class="next" type="radio" name="vibe" value="solids" id="solids">
+                <label class="first-option" for="solids">Solids</label>
 
-                    <input type="radio" name="vibe" value="patterns" id="patterns" required>
-                    <label class="options-medium" for="patterns">Patterns</label>
+                <input class="next" type="radio" name="vibe" value="metals" id="metals">
+                <label for="metals">Metals</label>
 
-                    <input type="radio" name="vibe" value="transparent" id="transparent" required>
-                    <label class="options-medium" for="transparent">Transparent</label>
+
+                <input class="next" type="radio" name="vibe" value="patterns" id="patterns">
+                <label for="patterns">Patterns</label>
+
+                <input class="next" type="radio" name="vibe" value="transparent" id="transparent">
+                <label for="transparent">Transparent</label>
             </div>
 
-            <div class="question container ">
+            <div class="question container">
                 <p class="question-title">Describe yourself.</p>
-                    <input type="radio" name="personality" value="adventurous" id="adventurous" required>
-                    <label class= "options-large"for="adventurous">Adventurous</label>
-               
-                    <input type="radio" name="personality" value="Netflix-and-chill" id="Netflix-and-chill" required>
-                    <label class="options-large" for="Netflix-and-chill">Netflix and Chill</label>
-               
-                    <input type="radio" name="personality" value="whatever" id="whatever" required>
-                    <label class="options-large"for="whatever">I do what I want</label>
+
+                <input class="next" type="radio" name="personality" value="adventurous" id="adventurous">
+                <label class="first-option" for="adventurous">Adventurous</label>
+
+                <input class="next" type="radio" name="personality" value="Netflix-and-chill" id="Netflix-and-chill"
+                    required>
+                <label for="Netflix-and-chill">Netflix and Chill</label>
+
+                <input class="next" type="radio" name="personality" value="whatever" id="whatever">
+                <label for="whatever">I do what I want</label>
             </div>
-    
+
             <div class="question container">
                 <p class="question-title">Do you even care for glasses?</p>
-                    <input type="radio" name="care" value="yes-care" id="yes-care" required="required">
-                    <label class="options-xlarge" for="yes-care">Hells yeah, I can't see!</label>
 
-                    <input type="radio" name="care" value="do-not-care" id="do-not-care" required="required">
-                    <label class="options-xlarge" for="do-not-care">Nope, not at all.</label>
-        
-                
+                <input class="next generate" type="radio" name="care" value="yes-care" id="yes-care">
+                <label class="first-option" for="yes-care">Hells yeah, I can't see!</label>
+
+                <input class="next generate" type="radio" name="care" value="do-not-care" id="do-not-care">
+                <label for="do-not-care">Nope, not at all.</label>
             </div>
 
-            <div class=" btns-div try-again">
+            <div class="btns-div">
                 <input class="btns" type="submit" value="Try again" id="refresh">
-                <label for="refresh"></label>
+                <label class="refresh-label" for=" refresh"></label>
             </div>
 
             <div class="your-glasses"></div>
 
-            <div class="btns-div next-div">
-                <input class="btns" type="button" value="next" id="next">
-                <label for="next"></label>
-            </div>
-            
-
-            <div class="btns-div generate-div">
-                <input class="btns" type="button" value="Just do it!" id="generate">
-                <label for="generate"></label>
-            </div>
-
-            <div class="btns-div mind-change-div">
-                <input class="btns" type="button" value="Can't see! Gimme glasses!" id ="change-my-mind">
-                <label for="change-my-mind"></label>
+            <div class="btns-div"">
+                <input class=" btns" type="button" value="Can't see! Gimme glasses!"
+                id="change-my-mind">
+                <label class="change-mind-label" for="change-my-mind"></label>
             </div>
         </form>
 
-    
-
-    <!-- Switch to CDN -->
-    <!-- <script src="jquery-2.1.4.min.js"></script> -->
+        <footer>
+            <a href="https://novaquach.com/" target="_blank">
+                <p>Nova Quach 2019</p>
+            </a>
+        </footer>
     </div>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>

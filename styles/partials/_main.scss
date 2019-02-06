@@ -1,14 +1,20 @@
 html {
     height: 100%;
+    font-size: 62.5%;
 }
 
 body {
     min-height: 100%;
     height: 100%;
-    font-size: 62.5%;
     // background: url(../assets/main-background-image.jpg);
     background: url(../assets/glasses-background-2.jpg);
     background-size: cover;
+    background-attachment: fixed;
+
+    @include body-text($primary-color, $small-font);
+    & p {
+        margin: 0;
+    }
 }
 
 .wrapper {
@@ -18,23 +24,19 @@ body {
 }
 
 .title {
-    font-size: 4.5rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
+    font-size: $large-font;
+    font-family: $primary-font;
     color: $secondary-color-dark;
     text-transform: uppercase;
     margin-top: 0;
     text-align: center;
-    // text-shadow: 6px 6px 0.5px $secondary-color-light;
     padding-top: 50px;
 
     text-shadow: #2e2b32 1px 1px, #2e2b32 0px 0px, #2e2b32 1px 1px,
         #2e2b32 2px 2px, #2e2b32 3px 3px, #2e2b32 4px 4px, #2e2b32 5px 5px,
         #2e2b32 6px 6px, #2e2b32 7px 7px, #2e2b32 8px 8px, #2e2b32 9px 9px,
         #2e2b32 10px 10px, #2e2b32 11px 11px, #2e2b32 12px 12px,
-        #2e2b32 13px 13px, #2e2b32 14px 14px, #2e2b32 15px 15px,
-        #2e2b32 16px 16px, #2e2b32 17px 17px, #2e2b32 18px 18px,
-        #2e2b32 19px 19px, #2e2b32 20px 20px;
+        #2e2b32 13px 13px, #2e2b32 14px 14px, #2e2b32 15px 15px;
 }
 
 .form-wrapper {
@@ -43,35 +45,70 @@ body {
     height: 500px;
 }
 
-#generate {
+.container,
+.btns-div {
+    margin: 0 auto;
+    text-align: center;
+}
+
+input[type='radio'] {
     display: none;
 }
 
-#change-my-mind {
+.question {
+    display: none;
+}
+
+.question:first-child {
+    display: block;
+}
+
+.first-option {
+    margin-top: 60px;
+}
+
+label,
+.question-title {
+    @include selection-style(20px 0, 20px);
+    display: block;
+}
+
+label {
+    box-shadow: 0px 0px 8px 1px lighten($primary-color, 10),
+        0px 6px 0px 0px lighten($primary-color, 50);
+    &:hover {
+        color: darken($secondary-color-dark, 7);
+        cursor: pointer;
+    }
+}
+
+.question-title {
+    padding: 90px;
+    box-shadow: 0px 0px 8px 1px lighten($primary-color, 5);
+}
+
+#change-my-mind,
+#refresh {
     display: none;
     margin: 0;
 }
 
-.btns-div.mind-change-div {
-    position: absolute;
-    bottom: 100px;
+.btns {
+    @include selection-style(20px 0, 15px 20px);
+    color: $primary-color;
+    box-shadow: 0px 0px 8px 1px lighten($primary-color, 5);
 }
 
-#refresh {
-    display: none;
-}
-
-.container {
-    width: 800px;
-    // height: 80%;
-    margin: 0 auto;
-    padding-bottom: 30px;
+.refresh-label,
+.change-mind-label {
+    background: none;
+    box-shadow: none;
 }
 
 .your-glasses {
     display: none;
     width: 800px;
-    height: 500px;
+    height: 450px;
     overflow: hidden;
     text-align: center;
     margin: 0 auto;
@@ -82,68 +119,16 @@ body {
     margin: 0 auto;
 }
 
-.btns-div {
-    text-align: left;
+.next {
+    border: 2px purple solid;
+    text-align: center;
 }
 
-.btns {
-    margin-left: 100px;
-    margin-top: 20px;
-    @include button-style;
-    border: 0;
-    &:hover {
-        background: $secondary-color-light;
+footer {
+    text-align: center;
+    padding-top: 180px;
+    & a {
+        text-decoration: none;
+        color: $primary-color;
     }
-}
-
-input[type='radio'] {
-    display: none;
-}
-
-// label styles
-
-.options-small {
-    @include label-style(22%);
-}
-
-.options-medium {
-    @include label-style(30%);
-}
-
-.options-large {
-    @include label-style(35%);
-}
-
-.options-xlarge {
-    @include label-style(44%);
-}
-
-input:checked + label {
-    outline: none;
-    box-shadow: 0px 0px 2px 4px $secondary-color-light;
-    font-weight: bolder;
-}
-
-// end of label styles
-.try-again {
-    text-align: right;
-    margin-bottom: 20px;
-}
-
-.question {
-    display: none;
-    background: white;
-    opacity: 0.8;
-    box-shadow: 0px 0px 8px 8px #fafafa;
-}
-
-.question:first-child {
-    display: block;
-}
-
-.question-title {
-    @include body-text($primary-color, 2.4rem, 600);
-    margin: 0 0 0 50px;
-    padding-top: 20px;
-    padding-bottom: 20px;
 }

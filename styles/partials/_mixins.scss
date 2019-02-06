@@ -1,47 +1,12 @@
-// @mixin menu-text-color($color) {
-//     font-family: 'Montserrat', sans-serif;
-//     font-size: $primary-text;
-//     font-weight:600;
-//     letter-spacing: 1px;
-//     text-decoration:none;
-//     text-transform:uppercase;
-//     line-height:29px;
-//     color:$color;
-// }
-
-
-
-@mixin body-text ($color,$font-size,$font-weight) {
+@mixin body-text($color, $font-size) {
     font-family: $primary-font;
     font-size: $font-size;
-    font-weight: $font-weight;
-    color:$color;
+    color: $color;
 }
 
-@mixin button-style(){
-    font-family:'Raleway', sans-serif;
-    font-size:1.6rem;
-    font-weight:bold;
-    background: $secondary-color-dark;
-    padding:5px 25px 7px 25px;
-    text-transform:capitalize;
-    box-shadow: 0 0 0.5px $secondary-color-dark,
-                0 0 0.5px $secondary-color-dark;
+@mixin selection-style($margin, $padding...) {
+    margin: $margin;
+    padding: $padding;
     border-radius: 5px;
-    border:none;
-}
-
-@mixin label-style ($width){
-     @include body-text($primary-color,1.8rem,400);
-    margin: 0 0 0 50px;
-    line-height:2.3;
-    display:block;
-    cursor:pointer;
-    border: skyblue solid 2 px;
-    padding: 0px 0 0px 50px;
-    width:$width;
-     &:hover{
-        font-weight: bolder;
-    }
-    border-radius: 2px;
+    background: $tertiary-color;
 }
