@@ -103,7 +103,6 @@ const data = {
     },
     whatever: [
         'assets/whatever-images/whatever-image-1.jpg',
-        'assets/whatever-images/whatever-image-2.jpg',
         'assets/whatever-images/whatever-image-3.jpg',
         'assets/whatever-images/whatever-image-4.jpg',
     ],
@@ -140,11 +139,6 @@ $(function() {
 
         event.preventDefault();
 
-        if (userCare == null) {
-            swal('Pick one please!');
-            return;
-        }
-
         let glassesChoices = getGlassesChoices(
             userShape,
             userVibe,
@@ -154,6 +148,11 @@ $(function() {
         let glasses = getGlasses(glassesChoices);
         showResults(userCare, glasses);
     }); //end of onSubmit function
+
+    // for touchscrens
+    $('label', '.btns')
+        .on('touchstart')
+        .addClass('hover-mobile');
 
     const getGlassesChoices = function getGlassesChoices(
         userShape,
@@ -219,18 +218,9 @@ $(function() {
 
     let nextCounter = 0; //reps the question we are on
 
-    $('.next').on('click', function(event) {
-        const userPreferences = getUserPreferences();
-
-        if (userPreferences[nextCounter] == null) {
-            alert('Pick one please!');
-            return;
-        }
-
+    $('.next').on('click', function() {
         nextCounter++;
-
         $(questionsArray[nextCounter - 1]).hide();
         $(questionsArray[nextCounter]).show();
-        console.log(nextCounter, 'this is the question number');
     });
 }); //document ready ends

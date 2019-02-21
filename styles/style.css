@@ -245,11 +245,13 @@ label {
 }
 
 label:hover {
-  color: #e58d81;
+  background: #eba89f;
+  color: #565656;
   cursor: pointer;
 }
 
 .question-title {
+  line-height: 1.4;
   padding: 90px;
   -webkit-box-shadow: 0px 0px 8px 1px #515151;
           box-shadow: 0px 0px 8px 1px #515151;
@@ -269,6 +271,26 @@ label:hover {
   color: #444;
   -webkit-box-shadow: 0px 0px 8px 1px #515151;
           box-shadow: 0px 0px 8px 1px #515151;
+  border: none;
+}
+
+.btns:hover {
+  background: #eba89f;
+  color: #565656;
+}
+
+.btns-try-again {
+  background: #515151;
+  color: #fafafa;
+}
+
+.btns-try-again:hover {
+  background: #848484;
+  color: #fafafa;
+}
+
+.hover-mobile {
+  color: #e58d81;
 }
 
 .refresh-label,
@@ -276,6 +298,11 @@ label:hover {
   background: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.refresh-label:hover,
+.change-mind-label:hover {
+  background: none;
 }
 
 .your-glasses {
@@ -292,11 +319,6 @@ label:hover {
   margin: 0 auto;
 }
 
-.next {
-  border: 2px purple solid;
-  text-align: center;
-}
-
 footer {
   text-align: center;
   padding-top: 180px;
@@ -305,6 +327,10 @@ footer {
 footer a {
   text-decoration: none;
   color: #444;
+}
+
+footer a:hover {
+  color: #e58d81;
 }
 
 @media (max-width: 1057px) {
@@ -343,6 +369,10 @@ footer a {
   .title {
     text-shadow: #2e2b32 1px 1px, #2e2b32 0px 0px, #2e2b32 1px 1px, #2e2b32 2px 2px, #2e2b32 3px 3px, #2e2b32 4px 4px, #2e2b32 5px 5px, #2e2b32 6px 6px, #2e2b32 7px 7px, #2e2b32 8px 8px, #2e2b32 10px 10px;
   }
+  .question-title {
+    line-height: 1.8;
+    padding: 70px;
+  }
   .your-glasses {
     width: 100%;
     height: initial;
@@ -354,6 +384,9 @@ footer a {
   .pika {
     width: 60%;
     margin-bottom: 60px;
+  }
+  footer {
+    padding-top: 150px;
   }
 }
 /*# sourceMappingURL=style.css.map */
