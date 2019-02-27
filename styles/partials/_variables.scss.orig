@@ -1,0 +1,14 @@
+$primary-font: 'Concert One', cursive;
+
+$large-font: 7.5rem;
+$medium-font: 4.8rem;
+$small-font: 2.4rem;
+
+<<<<<<< HEAD
+$primary-color: #444;
+$secondary-color: #eba89f;
+$tertiary-color: #fafafa;
+=======
+$secondary-color-dark:#eba89f; 
+$secondary-color-light: lighten(#eba89f, 10); 
+>>>>>>> 22016a63a894b7da24ed9aecbb453be30a7a401c
